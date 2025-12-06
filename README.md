@@ -103,6 +103,4 @@ Graphs created using Python:
 
 This project provides a clear understanding of PhonePe transaction patterns using SQL and Python. It helps build strong data analysis skills without using Power BI.
 
----
 
-If you need **full code**, **SQL queries**, or a **complete PDF documentation**, just tell Mimi!
