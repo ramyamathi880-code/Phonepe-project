@@ -84,10 +84,11 @@ phonepe_pro.py/
    ```
 
 🎯 Key Learning Outcomes
-    - Handling large JSON datasets
-    - Converting nested JSON to CSV
-    - Database integration using MySQL
-    - Building interactive dashboards with Streamlit
+- Handling large JSON datasets
+- Converting nested JSON to CSV
+- Database integration using MySQL
+- Building interactive dashboards with Streamlit
+
 
 👩‍💻 Author
 Ramya  
