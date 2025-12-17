@@ -27,23 +27,36 @@ To make the data suitable for analysis:
 This conversion simplifies querying and visualization.
 
 
-🧱 Project Structure
-
-  phonepe_streamlit_project/
-  │
-  ├── data/
-  │   ├── aggregated_transaction.csv
-  │   ├── aggregated_user.csv
-  │   ├── map_transaction.csv
-  │   └── map_user.csv
-  │
-  ├── scripts/
-  │   ├── json_to_csv.py
-  │   └── database_connection.py
-  │
-  ├── app.py
-  ├── requirements.txt
-  └── README.md
+## 🧱 Project Structure
+```
+phonepe_pro.py/
+│
+├── data/
+│   ├── json/
+│   │   ├── aggregated/
+│   │   ├── map/
+│   │   └── top/
+│   │
+│   └── csv/
+│       ├── agg_transaction.csv
+│       ├── agg_user.csv
+│       ├── map_transaction.csv
+│       ├── map_user.csv
+│       └── top_transaction.csv
+│
+├── scripts/
+│   ├── json_to_csv_aggregated.py
+│   ├── json_to_csv_map.py
+│   ├── json_to_csv_top.py
+│   └── mysql_connection.py
+│
+├── sql/
+│   └── phonepe_db.sql
+│
+├── scro_01.py
+├── requirements.txt
+└── README.md
+```
 
 🛠️ Technologies Used
        - Python
