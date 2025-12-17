@@ -1,106 +1,81 @@
-# PhonePe Data Analysis Project
+📊 PhonePe Pulse Data Visualization Project
 
-This project focuses on analysing PhonePe transaction data using **SQL** and **Python**. The goal is to understand transaction trends, customer behaviour, and state-wise performance using clean and simple analytical steps.
+📌 Project Overview:
+           This project focuses on analyzing and visualizing PhonePe Pulse data using Python, SQL, and Streamlit.  
+The original PhonePe data is available in **JSON format**, which is converted into **CSV format** for easier data processing, storage, and visualization.
 
----
-
-## 📌 Project Objectives
-
-* To clean and prepare the dataset using SQL.
-* To perform data analysis using SQL queries.
-* To use Python (Pandas + Visualization libraries) for EDA.
-* To create visual insights using **Matplotlib** and **Seaborn**.
-* To identify state-wise and year-wise trends.
-
----
-
-## 🗂 Tools & Technologies
-
-### **1. SQL**
-
-Used for:
-
-* Creating and storing tables
-* Cleaning data
-* Aggregation and grouping
-* Joins and subqueries
-* Window functions
-
-### **2. Python**
-
-Libraries used:
-
-* **Pandas** (data handling)
-* **Matplotlib** (visualization)
-* **Seaborn** (visualization)
-
-No Power BI is used.
-
----
-
-## 📁 Project Workflow
-
-### **1. Data Collection**
-
-Dataset provided by GUVI (PhonePe project orientation).
-
-### **2. SQL Data Cleaning**
-
-* Removing duplicates
-* Handling NULL values
-* Formatting datatypes
-* Creating views
-
-### **3. SQL Analysis**
-
-Key queries:
-
-* State-wise total transactions
-* Payment mode-wise transactions
-* Year-wise growth
-* Top 10 performing states
-* Monthly / quarterly analysis
-
-### **4. Python EDA**
-
-* Dataframe cleaning
-* Descriptive statistics
-* Grouping and merging
-* Trend analysis
-
-### **5. Visualization**
-
-Graphs created using Python:
-
-* Bar chart
-* Line chart
-* Pie chart
-* Heatmap
-* Histogram
-
----
-
-## 📊 Insights Covered
-
-* State-wise transaction volume comparison
-* District-level analysis
-* Yearly growth pattern
-* Top contributing states
-* Customer payment behaviour
-
----
-
-## 📌 Final Deliverables
-
-* SQL scripts
-* Python analysis notebook
-* Visual charts
-* PDF / Documentation (as required)
-
----
-
-## 🏁 Conclusion
-
-This project provides a clear understanding of PhonePe transaction patterns using SQL and Python. It helps build strong data analysis skills without using Power BI.
+🗂️ Data Source
+  - PhonePe Pulse GitHub Repository
+  - Data format: **JSON**
+  - Data includes:
+  - Transactions
+  - Users
+  - Insurance
+  - State and district-level insights
 
 
+🔄 JSON to CSV Conversion (Core Concept)
+    PhonePe data is originally stored in nested JSON structures.  
+To make the data suitable for analysis:
+
+1. JSON files are read using Python
+2. Nested data is extracted and flattened
+3. Data is converted into Pandas DataFrames
+4. DataFrames are saved as CSV files
+5. CSV files are loaded into MySQL database
+
+This conversion simplifies querying and visualization.
+
+
+🧱 Project Structure
+
+  phonepe_streamlit_project/
+  │
+  ├── data/
+  │   ├── aggregated_transaction.csv
+  │   ├── aggregated_user.csv
+  │   ├── map_transaction.csv
+  │   └── map_user.csv
+  │
+  ├── scripts/
+  │   ├── json_to_csv.py
+  │   └── database_connection.py
+  │
+  ├── app.py
+  ├── requirements.txt
+  └── README.md
+
+🛠️ Technologies Used
+       - Python
+       - Pandas
+       - MySQL
+       - Streamlit
+       - Plotly
+
+📈 Features:
+- State-wise transaction analysis
+- District-level insights
+- Device brand usage analysis
+- Interactive charts using Streamlit
+- SQL-based data retrieval
+
+▶️ How to Run the Project:
+1. Clone the repository
+2. Install required libraries
+   ```
+   pip install -r requirements.txt
+   ```
+3. Run Streamlit app
+   ```
+   streamlit run scro_01.py
+   ```
+
+🎯 Key Learning Outcomes
+    - Handling large JSON datasets
+    - Converting nested JSON to CSV
+    - Database integration using MySQL
+    - Building interactive dashboards with Streamlit
+
+👩‍💻 Author
+Ramya  
+PhonePe Pulse Data Visualization Project
